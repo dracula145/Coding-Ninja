@@ -31,9 +31,6 @@ public class MergeSort {
             sort(input, l, mid);
             sort(input, mid+1, r);
             merge(input, l, mid, r);
-            System.out.print("merged - ");
-            printArray(input);
-            System.out.println();
         }
     }
 
