@@ -11,7 +11,7 @@ public class SkipMDeleteN {
                     temp.next = temp2.next;
                     temp = temp.next;
                 }
-            else if(temp!=null) {  // important
+            else if(temp!=null) {  // important... ow it throws NPE 
                 temp.next = temp2;
                 break;
             }
