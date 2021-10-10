@@ -18,7 +18,7 @@ public class BST {
 
     private static BinaryTreeNode<Integer> insertHelper(BinaryTreeNode<Integer> root, int data){    
         if(root == null){
-            BinaryTreeNode<Integer> newNode = new BinaryTreeNode(data);
+            BinaryTreeNode<Integer> newNode = new BinaryTreeNode<>(data);
             return newNode;
         }
         if(data <= root.data) root.left = insertHelper(root.left, data);
