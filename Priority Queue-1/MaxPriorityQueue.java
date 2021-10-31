@@ -20,13 +20,14 @@ public class MaxPriorityQueue {
 		return heap.get(0);
 	}
 
-	void insert(int element) {
+	void insert(int element) { // O(log n)
 		heap.add(element);
 		int childIndex = heap.size() - 1;
 		int parentIndex = (childIndex - 1) / 2;
 
 		while (childIndex > 0) {
 			if (heap.get(childIndex) > heap.get(parentIndex)) {
+				//swap if child > parent
 				int temp = heap.get(childIndex);
 				heap.set(childIndex, heap.get(parentIndex));
 				heap.set(parentIndex, temp);
