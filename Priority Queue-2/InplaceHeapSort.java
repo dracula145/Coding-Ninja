@@ -25,8 +25,8 @@ public class InplaceHeapSort {
     // each time
     private static void downHeapify(int arr[], int i, int n) {
         int parentIndex = i;
-        int leftChildIndex = 2 * i + 1;
-        int rightChildIndex = 2 * i + 2;
+        int leftChildIndex = 2*i + 1;
+        int rightChildIndex = 2*i + 2;
 
         while (leftChildIndex < n) {
             int minIndex = parentIndex;

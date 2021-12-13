@@ -21,9 +21,9 @@ public class Board {
         }
     }
 
-    // adds moves to the board and checks after each addition the status of game
+    // adds moves to the board and checks after each addition, the status of game
     public int move(char symbol, int x, int y){
-        if(x>=size || y>=size || board[x][y]!=' ') return INVALID;
+        if(x<0 || y<0 || x>=size || y>=size || board[x][y]!=' ') return INVALID;
         board[x][y] = symbol; // this.board not necessary because only one board in one game
         count++;
 
