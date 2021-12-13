@@ -1,0 +1,68 @@
+public class LargestPiece {
+    static int[][] dir = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
+    static int ROW = 0, count = 0;
+
+	public static int dfs(String[] edge, int n) {
+		boolean[][] visited = new boolean[n][n];
+        ROW = n;
+        // Initialize result as 0 and traverse through the
+        // all cells of given matrix
+        int result = 0;
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+ 
+                // If a cell with value 1 is not
+                if (edge[i].charAt(j) == '1' && !visited[i][j])
+                {
+ 
+                    // visited yet, then new region found
+                    count = 1;
+                    DFS(edge, i, j, visited);
+ 
+                    // maximum region
+                    result = Math.max(result, count);
+                }
+            }
+        }
+        return result;
+	}
+
+     static boolean isSafe(String[] M, int row, int col,
+                          boolean[][] visited)
+    {
+        // row number is in range, column number is in
+        // range and value is 1 and not yet visited
+        return (
+            (row >= 0) && (row < ROW) && (col >= 0)
+            && (col < ROW)
+            && (M[row].charAt(col) == '1' && !visited[row][col]));
+    }
+ 
+    // A utility function to do DFS for a 2D boolean
+    // matrix. It only considers the 8 neighbours as
+    // adjacent vertices
+    static void DFS(String[] M, int row, int col,
+                    boolean[][] visited)
+    {
+        // These arrays are used to get row and column
+        // numbers of 8 neighbours of a given cell
+        
+        // Mark this cell as visited
+        visited[row][col] = true;
+ 
+        // Recur for all connected neighbours
+        for (int k = 0; k < 4; k++)
+        {
+            if (isSafe(M, row + dir[k][0], col + dir[k][1],
+                       visited))
+            {
+                // increment region length by one
+                count++;
+                DFS(M,row + dir[k][0], col + dir[k][1],
+                    visited);
+            }
+        }
+    }
+}
