@@ -13,7 +13,7 @@ public class Dijkstra {
         int v = adj_matrix.length;
         boolean[] visited = new boolean[v];
         int[] distance = new int[v];  // weight of vertex and parent
-        for(int i=1; i<v; i++) distance[i] = Integer.MAX_VALUE;   // setting infinity to all indices >1
+        for(int i=1; i<v; i++) distance[i] = Integer.MAX_VALUE;   // setting infinity to all indices >0
 
         // start the algorithm
         for(int i=0; i<v-1; i++){
