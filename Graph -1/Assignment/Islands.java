@@ -42,3 +42,31 @@ public class Islands {
     return num_count;
 	}
 }
+
+/*
+        DFS solution
+
+        	public class Solution {
+	static int count=0;
+    public static int numConnected(int[][] edges, int n) {
+        
+        boolean [] visited=new boolean[edges.length];
+        for(int i=0;i<n;i++){
+            if(visited[i]==false){
+                dftraversal(edges,i,visited);
+                count++;
+            }
+        }
+        return count;
+    }
+    public static void dftraversal(int adjMatrix[][],int c, boolean visited[]) {
+        visited[c]=true;
+        for(int i=0;i<adjMatrix.length;i++) {
+            if(adjMatrix[c][i]==1 && visited[i]==false) {
+                dftraversal(adjMatrix,i,visited);
+            }
+        }
+    }
+}
+
+*/
