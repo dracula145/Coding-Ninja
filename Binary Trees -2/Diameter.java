@@ -1,3 +1,28 @@
+/*
+
+For a given Binary of type integer, find and return the ‘Diameter’.
+Diameter of a Tree
+
+definition : 
+The diameter of a tree can be defined as the maximum distance between two leaf nodes.
+Here, the distance is measured in terms of the total number of nodes present along the path of the two leaf nodes, including both the leaves.
+
+Constraints:
+1 <= N <= 10^5
+Where N is the total number of nodes in the binary tree.
+
+Time Limit: 1 sec
+Sample Input 1:
+2 4 5 6 -1 -1 7 20 30 80 90 -1 -1 8 -1 -1 9 -1 -1 -1 -1 -1 -1 
+Sample Output 1:
+9
+Sample Input 2:
+1 2 3 4 5 6 7 -1 -1 -1 -1 -1 -1 -1 -1
+Sample Output 2:
+5
+
+*/
+
 import java.lang.*;
 public class Diameter {
     
