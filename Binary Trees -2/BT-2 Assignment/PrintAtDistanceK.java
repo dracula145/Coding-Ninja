@@ -6,7 +6,8 @@ Example:
 For a given input tree(refer to the image below):
 1. Target Node: 5
 2. K = 2
-alt txt
+
+3, 5, 1, 6, 2, 0, 8, -1, -1, 7, 4, -1, -1, -1, -1
 
 Starting from the target node 5, the nodes at distance K are 7 4 and 1.
 

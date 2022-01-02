@@ -1,3 +1,17 @@
+/*
+
+Given a generic tree, print the input tree in level wise order. That is, print the elements at same 
+level in one line (separated by space). Print different levels in differnet lines.
+
+Sample Input :
+10 3 20 30 40 2 40 50 0 0 0 0 
+Sample Output :
+10
+20 30 40 
+40 50
+
+*/
+
 import java.util.Queue;
 
 import javax.swing.tree.TreeNode;

@@ -1,3 +1,15 @@
+/*
+
+Given a BST, convert it into a sorted linked list. You have to return the head of LL.
+
+Constraints:
+Time Limit: 1 second
+Sample Input 1:
+8 5 10 2 6 -1 -1 -1 -1 -1 7 -1 -1
+Sample Output 1:
+2 5 6 7 8 10
+*/
+
 package Assignment;
 
 class BinaryTreeNode<T> {

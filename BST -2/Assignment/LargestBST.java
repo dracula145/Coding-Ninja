@@ -1,3 +1,17 @@
+/*
+
+Given a Binary tree, find the largest BST subtree. That is, you need to find the BST with maximum height 
+in the given binary tree. You have to return the height of largest BST.
+
+Constraints:
+Time Limit: 1 second
+Sample Input 1:
+5 10 6 2 3 -1 -1 -1 -1 -1 9 -1 -1
+Sample Output 1:
+2
+
+*/
+
 package Assignment;
 
 public class LargestBST {
