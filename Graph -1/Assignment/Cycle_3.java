@@ -1,3 +1,10 @@
+/*
+	don't use visited, because we might mark one vertex and later we might not visit that and count++ even if
+	that vertex is shared by more cycles.. so better to use the 3 loops
+
+	div by 6 because for every vertex of the cycle we will get the same cycle 2 times... so total 6 times
+*/
+
 import java.util.*;
 public class Cycle_3 {
 

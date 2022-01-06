@@ -1,3 +1,20 @@
+/*
+
+Given a random integer array A of size N. Find and print the count of pair of elements in the array 
+which sum up to 0.
+Note: Array A can contain duplicate elements as well.
+
+Constraints :
+0 <= N <= 10^4
+Time Limit: 1 sec
+Sample Input 1:
+5
+2 1 -2 2 3
+Sample Output 1:
+2
+
+*/
+
 import java.util.*;
 
 public class PairSumTo0 {

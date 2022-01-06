@@ -1,3 +1,18 @@
+/*
+
+Given a binary tree, return the longest path from leaf to root. Longest means, a path which contain 
+maximum number of nodes from leaf to root.
+
+Sample Input 1 :
+ 5 6 10 2 3 -1 -1 -1 -1 -1 9 -1 -1
+Sample Output 1 :
+9
+3
+6
+5
+
+*/
+
 import java.util.ArrayList;
 
 public class LongestLeafToRoot {
