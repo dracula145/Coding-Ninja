@@ -24,9 +24,13 @@ Sample Input 1 :
 Sample Output 1 :
 2
 Sample Output 1 Explanation :
-Person with priority 3 comes out. But there is a person with higher priority than him. So he goes and then stands in the queue at the end. Queue's status :  {9, 4, 3}. Time : 0 secs.
-Next, the person with priority 9 comes out. And there is no person with higher priority than him. So he'll get the ticket. Queue's status :  {4, 3}. Time : 1 secs.
-Next, the person with priority 4 comes out (which is you). And there is no person with higher priority than you. So you'll get the ticket. Time : 2 secs.
+Person with priority 3 comes out. But there is a person with higher priority than him. So he goes and then stands in the 
+queue at the end. Queue's status :  {9, 4, 3}. Time : 0 secs.
+Next, the person with priority 9 comes out. And there is no person with higher priority than him. So he'll get the ticket. 
+Queue's status :  {4, 3}. Time : 1 secs.
+Next, the person with priority 4 comes out (which is you). And there is no person with higher priority than you. So you'll 
+get the ticket. Time : 2 secs.
+
 Sample Input 2 :
 5
 2 3 2 2 4
