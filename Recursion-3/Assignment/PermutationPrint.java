@@ -1,3 +1,19 @@
+/*
+
+Given a string, find and print all the possible permutations of the input string.
+Note : The order of permutations are not important. Just print them in different lines.
+Sample Input :
+abc
+Sample Output :
+abc
+acb
+bac
+bca
+cab
+cba
+
+*/
+
 package Assignment;
 
 public class PermutationPrint {

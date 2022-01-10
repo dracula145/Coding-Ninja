@@ -1,4 +1,7 @@
-
+/*
+    Implement the Trie class
+    Search and count functions
+*/
 class TrieNode{
     char data;
     boolean isTerminal;
