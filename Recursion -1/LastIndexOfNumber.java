@@ -28,4 +28,31 @@ public class LastIndexOfNumber {
         endIndex++;
         return lastIndex(input, x);
 	}
+
+    // starting from 0.. not from last
+    public static int lastIndex(int arr[], int x) {
+        return lastIndex(arr, 0, x);
+    }
+
+    public static int lastIndex(int[] arr, int indx, int x) {
+        if (indx == arr.length) {
+            return -1;
+        }
+
+        // ask next array if it has x in it
+        int li = lastIndex(arr, indx + 1, x);
+
+        // if yes, return that only
+        if (li != -1)
+            return li;
+
+        // if not, check if current is x
+        if (arr[indx] == x)
+            return indx;
+
+            // if not then return -1
+        else
+            return -1;
+
+    }
 }
