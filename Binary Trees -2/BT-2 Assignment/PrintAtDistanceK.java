@@ -96,6 +96,62 @@ public class PrintAtDistanceK {
         printNodesAtDistanceK(root.right,k-1);
     }
 
+    // another method... which works 
+    /*
+
+public class Solution {
+    
+   
+	public static void nodesAtDistanceK(BinaryTreeNode<Integer> root, int node, int k) {
+	    //Your code goes here
+        ArrayList<BinaryTreeNode<Integer>> path=new ArrayList<BinaryTreeNode<Integer>>();
+        findpathtoroot(root,node, path);
+        for(int i=0;i<path.size();i++)
+        {
+            nodes(path.get(i),k-i,i==0?null:path.get(i-1));
+        }
+// for(int i=0;i<path.size();i++)
+//         {
+//         		 System.out.println(path.get(i).data+"t");
+//         }
+    }
+           
+    public static Boolean  findpathtoroot (BinaryTreeNode<Integer> root, int node, ArrayList<BinaryTreeNode<Integer>> path)
+    {
+        if(root==null)
+        {
+            return false;
+        }
+        if(root.data==node)
+        {
+            path.add(root);
+            return true;
+        }
+        if(findpathtoroot(root.left,node, path) || findpathtoroot(root.right,node, path))
+        {
+            path.add(root);
+            return true;
+        }
+        return false;
+    }
+   public static void nodes(BinaryTreeNode<Integer> root,  int k,BinaryTreeNode<Integer>  blocker)
+   {
+       if(k<0||root==null||root==blocker)
+       {
+           return ;
+       }
+           
+      if(k==0)
+      {
+          System.out.println(root.data);
+          return;
+      }
+      nodes(root.left,k-1,blocker);
+      nodes(root.right,k-1,blocker);
+   }
+}
+    */
+
     /* Hint Video 1st method... didn't work for last 2 test cases */
 
 //  private static class Pair{         // static because i don't want to call PrintAtDistanceK.Pair everytime.
